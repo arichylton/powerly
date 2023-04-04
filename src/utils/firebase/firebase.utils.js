@@ -8,6 +8,7 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 
+
 import {
   getFirestore,
   doc,
@@ -21,8 +22,8 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyANV91DEos4fONs710ycYsd7wFA9nH7bVc',
-  authDomain: 'power-db-8f9c4.firebaseapp.com',
+  apiKey: `${import.meta.env.VITE_API_KEY}`,
+  authDomain: `${import.meta.env.VITE_AUTH_DOMAIN}`,
   projectId: 'power-db-8f9c4',
   storageBucket: 'power-db-8f9c4.appspot.com',
   messagingSenderId: '675207666655',
