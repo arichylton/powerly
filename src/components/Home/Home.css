@@ -1,0 +1,123 @@
+.home {
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(45, 49, 68)), to(rgba(60, 48, 126, 0.905)));
+    background-image: -webkit-linear-gradient(top, rgb(45, 49, 68), rgba(60, 48, 126, 0.905));
+    background-image: -o-linear-gradient(top, rgb(45, 49, 68), rgba(60, 48, 126, 0.905));
+    background-image: linear-gradient(to bottom, rgb(45, 49, 68), rgba(60, 48, 126, 0.905));
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            margin: 0 auto;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.listGrid {
+    margin: 40px auto 60px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.list-col {
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+}
+
+.list-col span {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.list-col:hover {
+    -webkit-box-shadow: 1px 1px 5px #777;
+            box-shadow: 1px 1px 5px #777;
+}
+
+.display-4 {
+    font-size: 5rem;
+    letter-spacing: 8px; 
+}
+
+.header-home {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+
+.lead {
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+h2:after {
+    margin: 0 auto;
+    display: block;
+    height: 2px;
+    background-color: rgba(60, 48, 126, 0.905);
+    content: "";   
+    width: 60px;  
+    margin-top: 12px;  
+}
+
+@media only screen and (max-width: 1023px) {
+    .display-4 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
