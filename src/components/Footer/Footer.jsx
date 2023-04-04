@@ -17,7 +17,7 @@ const Footer = () => {
 				>
 					{' '}
 					Made with ❤️ by Aric
-					Hylton &copy; 2019
+					Hylton &copy; 2023
 				</h4>
 			</div>
 		</footer>
