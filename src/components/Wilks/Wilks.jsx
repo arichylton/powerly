@@ -3,7 +3,7 @@ import { UserContext } from '../../contexts/user.context';
 import {
   updateUserWilks,
   getUserWilks,
-	deleteUserWilks
+  deleteUserWilks,
 } from '../../utils/firebase/firebase.utils';
 import WilksChart from './WilksChart';
 import './Wilks.css';
@@ -44,7 +44,7 @@ const Wilks = () => {
       setWilksScores(data.wilksScores);
     };
     fetchData();
-		renderWilksData();
+    renderWilksData();
   }, [currentUser, wilksScores]);
 
   const calcWilks = () => {
@@ -241,11 +241,15 @@ const Wilks = () => {
           <h2 className='scores-header centered'>
             {currentUser.displayName}'s scores
           </h2>
-          <div className='wilks-data-titles'>
-            <span>Bodyweight</span>
-            <span>Total</span>
-            <span>Wilks</span>
-          </div>
+          {wilksScores > 0 ? (
+            <div className='wilks-data-titles'>
+              <span>Bodyweight</span>
+              <span>Total</span>
+              <span>Wilks</span>
+            </div>
+          ) : (
+            <p className='centered'>No scores to show</p>
+          )}
           <div className='list-group-flush'>{renderWilksDataList()}</div>
         </div>
       );

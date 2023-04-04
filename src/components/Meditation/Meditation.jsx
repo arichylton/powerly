@@ -67,7 +67,6 @@ const Meditation = () => {
                 and stay healthy minded through out the harder parts of your
                 program.
               </p>
-
               <p>
                 Resources: <br />
                 <i>
