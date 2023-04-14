@@ -22,8 +22,8 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: `${import.meta.env.VITE_API_KEY}`,
-  authDomain: `${import.meta.env.VITE_AUTH_DOMAIN}`,
+  apiKey: `${process.env.VITE_API_KEY}`,
+  authDomain: `${process.env.VITE_AUTH_DOMAIN}`,
   projectId: 'power-db-8f9c4',
   storageBucket: 'power-db-8f9c4.appspot.com',
   messagingSenderId: '675207666655',
@@ -41,7 +41,7 @@ googleProvider.setCustomParameters({
 });
 
 export const auth = getAuth();
-export const signInWithGoogleRedirect = () =>
+export const signInWithGoogleRedirect = () => 
   signInWithRedirect(auth, googleProvider);
 
 // FIREBASE

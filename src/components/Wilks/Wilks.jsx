@@ -241,7 +241,7 @@ const Wilks = () => {
           <h2 className='scores-header centered'>
             {currentUser.displayName}'s scores
           </h2>
-          {wilksScores > 0 ? (
+          {wilksScores.length > 0 ? (
             <div className='wilks-data-titles'>
               <span>Bodyweight</span>
               <span>Total</span>
