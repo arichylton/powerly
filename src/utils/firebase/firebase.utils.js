@@ -21,9 +21,12 @@ import {
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+console.log(import.meta.env.VITE_API_KEY);
+console.log(VITE_API_KEY);
 const firebaseConfig = {
-  apiKey: `${process.env.VITE_API_KEY}`,
-  authDomain: `${process.env.VITE_AUTH_DOMAIN}`,
+  apiKey: `${import.meta.env.VITE_API_KEY}`,
+  authDomain: `${import.meta.env.VITE_AUTH_DOMAIN}`,
   projectId: 'power-db-8f9c4',
   storageBucket: 'power-db-8f9c4.appspot.com',
   messagingSenderId: '675207666655',
