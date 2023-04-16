@@ -22,9 +22,6 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-console.log(import.meta.env.VITE_API_KEY);
-console.log(import.meta.env.VITE_AUTH_DOMAIN);
-
 const firebaseConfig = {
   apiKey: `${import.meta.env.VITE_API_KEY}`,
   authDomain: `${import.meta.env.VITE_AUTH_DOMAIN}`,
@@ -55,7 +52,7 @@ export const createUserDocumentFromAuth = async (userAuth) => {
   const userDocRef = doc(db, 'users', userAuth.uid);
   const userSnapshot = await getDoc(userDocRef);
 
-  if (!userSnapshot.exists) {
+  if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
     const wilksScores = [];

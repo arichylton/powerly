@@ -18,7 +18,7 @@ const Wilks = () => {
 
   const { currentUser } = useContext(UserContext);
   const isFirstRender = useRef(true);
-
+  const formRef = useRef();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,9 +28,7 @@ const Wilks = () => {
       isFirstRender.current = false;
       return;
     }
-
     if (currentUser && wilks > 0) {
-      console.log(currentUser);
       const date = new Date();
       updateUserWilks({ total, weight, date, wilks, type });
     }
@@ -38,7 +36,6 @@ const Wilks = () => {
 
   useEffect(() => {
     if (!currentUser) return;
-
     const fetchData = async () => {
       let data = await getUserWilks();
       setWilksScores(data.wilksScores);
@@ -108,9 +105,20 @@ const Wilks = () => {
     );
   };
 
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+    console.log('hellO');
+    formRef.current.reset();
+}
+
   const renderWilksCalc = () => {
     return (
-      <form className='container'>
+      <form
+        className='container'
+        ref={formRef}
+        onSubmit={onHandleSubmit}
+        id='wilksForm'
+      >
         <div className='row wilks-calc'>
           <div className='col'>
             <div className='my-1 mb-4'>
@@ -191,7 +199,9 @@ const Wilks = () => {
               </div>
               <button
                 type='button'
+                value='Submit'
                 className='btn btn-primary'
+                form='wilksForm'
                 onClick={calcWilks}
               >
                 Submit
