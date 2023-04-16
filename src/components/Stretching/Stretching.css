@@ -6,25 +6,25 @@
       from(rgba(33, 30, 68, 0.904)),
       to(rgba(96, 218, 255, 0.932))
     ),
-    url(../../pics/stretching.png);
+    url(../../assets/pics/stretching.png);
   background-image: -webkit-linear-gradient(
       top left,
       rgba(33, 30, 68, 0.904),
       rgba(96, 218, 255, 0.932)
     ),
-    url(../../pics/stretching.png);
+    url(../../assets/pics/stretching.png);
   background-image: -o-linear-gradient(
       top left,
       rgba(33, 30, 68, 0.904),
       rgba(96, 218, 255, 0.932)
     ),
-    url(../../pics/stretching.png);
+    url(../../assets/pics/stretching.png);
   background-image: linear-gradient(
       to bottom right,
       rgba(33, 30, 68, 0.904),
       rgba(96, 218, 255, 0.932)
     ),
-    url(../../pics/stretching.png);
+    url(../../assets/pics/stretching.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -63,17 +63,17 @@
   color: white;
 }
 
-
 .grid-stretching {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem), 1fr));
 }
 
 @media only screen and (max-width: 480px) {
-    .grid-stretching {
-        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    }
+  .grid-stretching {
+    grid-template-columns: repeat(auto-fit, minmax(min(22rem), 1fr));
+  }
 }
 
 .stretching-img {
@@ -84,9 +84,8 @@
 }
 
 .stretching-img:hover {
-    opacity: .7;
-    -webkit-transform: scale(.95);
-        -ms-transform: scale(.95);
-            transform: scale(.95);
+  opacity: 0.7;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
-
