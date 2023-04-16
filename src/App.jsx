@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import Wilks from './components/Wilks/Wilks';
 import Goals from './components/Goals/Goals';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Plan from './components/Plan/Plan';
 import Progress from './components/Progress/Progress';
 import Stretching from './components/Stretching/Stretching';
