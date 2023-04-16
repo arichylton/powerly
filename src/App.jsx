@@ -28,6 +28,7 @@ const App = () => {
           <Route path='/stretching' exact component={Stretching} />
           <Route path='/meditation' exact component={Meditation} />
           <Route path='/partners' exact component={Partners} />
+          <Route path='*' component={ErrorPage} />
         </Switch>
         <Footer />
       </div>
