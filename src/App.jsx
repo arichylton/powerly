@@ -16,7 +16,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router basename='/powerly'>
+    <Router basename='/'>
       <div className='main-body'>
         <Header />
         <Switch>

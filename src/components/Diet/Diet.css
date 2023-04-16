@@ -48,7 +48,7 @@
 .grid-diet {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
 }
 
 .grid-diet-item {
@@ -83,6 +83,6 @@
 
 @media only screen and (max-width: 480px) {
     .grid-diet {
-        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+       grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
     }
 }
