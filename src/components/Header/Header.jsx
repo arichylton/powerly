@@ -61,10 +61,10 @@ const Header = () => {
       <nav className='navbar navbar-light header-nav ghost'>
         <div className='ghost-header'>
           <Link to='/' className='navbar-brand'>
-            <span className='v-mid mr-4'>POWER</span>
+            <span className='v-mid'>POWER</span>
           </Link>
           <Link to='/wilks' className='navbar-brand ghost'>
-            <span className='v-mid mr-4'>Wilks</span>
+            <span className='v-mid'>Wilks</span>
           </Link>
           {/* <Link to='/goals' className='navbar-brand ghost'>
             <span className='v-mid'>Goals</span>

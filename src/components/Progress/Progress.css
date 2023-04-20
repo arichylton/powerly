@@ -1,50 +1,66 @@
 .progress-body {
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(33, 30, 68, 0.904)), to(rgba(96, 218, 255, 0.932))),
-		url(../../pics/sword.png);
-	background-image: -webkit-linear-gradient(top left, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/sword.png);
-	background-image: -o-linear-gradient(top left, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/sword.png);
-	background-image: linear-gradient(to bottom right, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/sword.png);
-	background-repeat: no-repeat;
-	background-position: center;
-    background-attachment: fixed;
-    
-    height: 100%;
-    
-    display: -webkit-box;
-    
-    display: -ms-flexbox;
-    
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(33, 30, 68, 0.904)),
+      to(rgba(96, 218, 255, 0.932))
+    ),
+    url(../../assets/pics/sword.png);
+  background-image: -webkit-linear-gradient(
+      top left,
+      rgba(33, 30, 68, 0.904),
+      rgba(96, 218, 255, 0.932)
+    ),
+    url(../../assets/pics/sword.png);
+  background-image: -o-linear-gradient(
+      top left,
+      rgba(33, 30, 68, 0.904),
+      rgba(96, 218, 255, 0.932)
+    ),
+    url(../../assets/pics/sword.png);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(33, 30, 68, 0.904),
+      rgba(96, 218, 255, 0.932)
+    ),
+    url(../../assets/pics/sword.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  height: 100%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .jumbotron-progress {
-    height: 55vh;
+  height: 55vh;
 
-    display: -webkit-box;
+  display: -webkit-box;
 
-    display: -ms-flexbox;
-    text-align: center;
-    display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-    
-    color: white;
+  display: -ms-flexbox;
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  color: white;
 }
 
 .progress-img {
-    width: 50vw;
+  width: 50%;
 }

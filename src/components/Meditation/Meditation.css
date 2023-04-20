@@ -1,12 +1,12 @@
 .meditation-body {
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(33, 30, 68, 0.904)), to(rgba(96, 218, 255, 0.932))),
-		url(../../pics/meditation.png);
+		url(../../assets/pics/meditation.png);
 	background-image: -webkit-linear-gradient(top left, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/meditation.png);
+		url(../../assets/pics/meditation.png);
 	background-image: -o-linear-gradient(top left, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/meditation.png);
+		url(../../assets/pics/meditation.png);
 	background-image: linear-gradient(to bottom right, rgba(33, 30, 68, 0.904), rgba(96, 218, 255, 0.932)),
-		url(../../pics/meditation.png);
+		url(../../assets/pics/meditation.png);
 	background-repeat: no-repeat;
 	background-position: center;
     background-attachment: fixed;
